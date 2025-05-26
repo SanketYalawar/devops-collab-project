@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8080:8080 devops-collab'
+                sh 'docker run -d -p 5000:8080 devops-collab'
             }
         }
     }
