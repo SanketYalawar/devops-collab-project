@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Code') {
-            steps {
-                echo 'Cloning the repository...'
-                git 'https://github.com/SanketYalawar/devops-collab-project.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
